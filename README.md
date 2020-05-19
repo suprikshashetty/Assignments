@@ -1,10 +1,10 @@
 # Assignments
-package shortestpalindromeexample.java;
+package spal.java;
 import java.util.Scanner;
  
 public class ShortestPalindromeDemo {
  
-public static String shortestPalindrome(String str) {
+public static String shortestpal(String str) {
      
 int x=0;  
 int y=str.length()-1;
@@ -21,7 +21,7 @@ return str;
  
 String suffix = str.substring(x);
 String prefix = new StringBuilder(suffix).reverse().toString();
-String mid = shortestPalindrome(str.substring(0, x));
+String mid = shortestpal(str.substring(0, x));
  
 return prefix+mid+suffix;
 }
